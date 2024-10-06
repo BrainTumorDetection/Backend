@@ -50,6 +50,9 @@ for i, image_name in enumerate(yes_tumor_images):
 dataset=np.array(dataset)
 label=np.array(label)
 
+#print(dataset)
+#print(label)
+
 # allocate 80% of images for training, 20% for testing, same split every time run code
 dataset_train, dataset_test, dataset_train, label_test = train_test_split(dataset, label, test_size=0.2, random_state=0)
 
